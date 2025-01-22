@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source
+          media="(max-width:550px)"
+          srcset="images/illustration-sign-up-mobile.svg"
+        />
+        <img src="images/illustration-sign-up-desktop.svg" alt="sign-up" />
+      </picture>
+      <form>
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <div class="labels">
+          <label>Email address</label>
+          <!-- in default desplay none -->
+          <label class="error">Valid email required</label>
+        </div>
+        <!-- add error class to make this from error -->
+        <input name="email" class="" type="text" placeholder="email@company.com" />
+        <input type="submit" value="Subscribe to monthly newsletter" />
+      </form>
+    </main>
+
+    <div class="succes">
+      <div class="info">
+        <picture> </picture>
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confimation email has been sent to <span id="email"></span>. Please
+          open it and click the button inside to confirm your subscription
+        </p>
+      </div>
+      <button>Dismiss message</button>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
